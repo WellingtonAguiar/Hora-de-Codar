@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <!-- /* Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável. */ -->
+    <script>
+        base = parseFloat(prompt("Insira a base:"));
+        altura = parseFloat(prompt("Insira a altura:"));
+        areaRetangulo = base * altura;
+        alert("A área do triângulo é: " + areaRetangulo);
+
+        lado = parseFloat(prompt("Insira o tamanho do lado:"));
+        areaQuadrado = lado * lado;
+        alert("A área do quadrado é " + areaQuadrado);
+
+        diagonalMaior = parseFloat(prompt("Insira a diagonal maior do losango:"));
+        diagonalMenor = parseFloat(prompt("Insira a diagonal menor do losango"));
+        areaLosango = (diagonalMaior * diagonalMenor) / 2
+        alert("A área do losango é de: " + areaLosango);
+
+        baseMaior = parseFloat(prompt("Insira a base maior do trapézio:"));
+        baseMenor = parseFloat(prompt("Insira a base menor do trapézio:"));
+        alturaTrapezio = parseFloat(prompt("Insira a altura do trapézio"));
+        areaTrapezio = (baseMaior + baseMenor) * alturaTrapezio / 2;
+        alert("A área do trapézio é de: " + areaTrapezio);
+
+        baseParalelo = parseFloat(prompt("Insira a base do paralelogramo: "));
+        alturaParalelo = parseFloat(prompt("Insira a altura do paralelogramo"));
+        areaParalelogramo = baseParalelo * alturaParalelo;
+        alert("A área do paralelogramo é: " + areaParalelogramo);
+
+        baseParalelo = parseFloat(prompt("Insira a base do paralelogramo:"));
+        alturaParalelo = parseFloat(prompt("Insira a altura do paralelogramo:"));
+        areaParalelogramo = baseParalelo * alturaParalelo;
+        alert("A área do paralelogramo é: " + areaParalelogramo);
+
+        baseTriangulo = parseFloat(prompt("Insira a base do triângulo"));
+        alturaTriangulo = parseFloat(prompt("Insira a altura do triângulo"));
+        areaTriangulo = baseTriangulo * alturaTriangulo;
+        alert("A área do triângulo é de " + areaTriangulo);
+
+        raio = parseFloat(prompt("Insira o raio do círculo:"));
+        areaCirculo = 3.14 * (raio * raio);
+        alert("A área do circulo é " + areaCirculo);
+    </script>
+
+</body>
+</html>
