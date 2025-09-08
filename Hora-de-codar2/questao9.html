@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 9</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+        var anoAtual = 2025;
+        var idade = 0;
+        ano = parseInt(prompt("Insira seu ano de nascimento"));
+
+        idade = anoAtual - ano;
+
+        if(idade < 18){
+            alert("Não pode votar esse ano, você tem apenas "+ idade + " anos");
+        } else if(idade >= 18){
+            alert("Você pode votar esse ano, você tem "+ idade + " anos")
+        }
+    </script>
+</body>
+</html>

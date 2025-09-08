@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 11</title>
+</head>
+<body>
+    <script>
+//         11. Uma micro calculadora
+// Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+// O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+
+        n1 = parseInt(prompt("Insira o primeiro número inteiro:"));
+        n2 = parseInt(prompt("Insira o segundo número inteiro:"));
+
+        operacao = parseInt(prompt("Insira a operação desejada (1 - adição; 2 - subração; 3 - multiplicação; 4 - divisão)"));
+        if(operacao == 1){
+            soma = n1 + n2;
+            alert("A soma dos números é: "+ soma);
+        }else if(operacao == 2){
+            sub = n1 - n2;
+            alert("O resultado da subtração é: " + sub);
+        }else if(operacao == 3){
+            mult = n1 * n2;
+            alert("O resultado da multiplicação é: " + mult);
+        }else if(operacao == 4){
+            div = n1 / n2;
+            alert("O resultado da divisão é: " + div);
+        }else{
+            alert("Erro, verifique os dados e tente novamente!");
+        }
+
+    </script>
+</body>
+</html>

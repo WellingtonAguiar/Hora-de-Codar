@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 5</title>
+</head>
+<body>
+    <script>
+        //  Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+        var numeros = [];
+        var soma = 0;
+        var media = 0;
+
+        for (let i = 0; i < 6; i++) {
+            let numero = Number(prompt(`Digite o ${i + 1}º número:`));
+            numeros.push(numero);
+            soma += numero;
+        }
+        media = soma / 6;
+        alert("A média dos valores é: "+media);
+
+    </script>
+</body>
+</html>

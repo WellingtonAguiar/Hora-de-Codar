@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 6</title>
+</head>
+<body>
+    <script>
+        // 6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+        
+        var num1 = parseInt(prompt("Insira o primeiro número:"));
+        var num2 = parseInt(prompt("Insira o segundo número:"));
+        var num3 = parseInt(prompt("Insira o terceiro número:"));
+        var num4 = parseInt(prompt("Insira o quarto número:"));
+        var arr = [num1, num2, num3, num4];
+
+        var primeiro = arr[0];
+
+        var ultimo = arr[arr.length - 1];
+
+        var maior = Math.max(...arr);
+
+       alert("O primeiro número é: " + primeiro + " " + "O último número é: " + ultimo + " "+ "e o maior número é: " + maior);
+
+
+    </script>
+</body>
+</html>
