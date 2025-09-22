@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Vamos criar uma lista de compras. Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". Peça novamente para o usuário digitar o nome de uma fruta para ser removida. Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".
+        let frutas = ["Maçã", "Banana", "Laranja", "Uva", "Mamão"];
+
+        // Exibe a lista inicial
+        document.write(`<p>Lista de frutas disponível: ${frutas.join(", ")}</p>`);
+
+        // Laço principal: continua enquanto houver frutas na lista
+        while (frutas.length > 0) {
+            let frutaUsuario = prompt("Digite o nome da fruta para remover da lista:");
+
+            if (frutaUsuario === null) {
+                document.write("<p>Operação cancelada pelo usuário.</p>");
+                break;
+            }
+
+            // Procura se a fruta existe no array
+            let index = frutas.indexOf(frutaUsuario);
+
+            if (index !== -1) {
+                // Remove a fruta
+                frutas.splice(index, 1);
+                document.write(`<p>Fruta "${frutaUsuario}" foi retirada da lista.</p>`);
+
+                if (frutas.length > 0) {
+                    document.write(`<p>Frutas restantes: ${frutas.join(", ")}</p>`);
+                } else {
+                    document.write("<p>Lista de compras finalizada.</p>");
+                }
+
+            } else {
+                document.write(`<p>Fruta "${frutaUsuario}" indisponível no nosso mercado.</p>`);
+            }
+        }
+    </script>
+</body>
+
+</html>

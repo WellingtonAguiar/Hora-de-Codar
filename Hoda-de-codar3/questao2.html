@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Escreva um algoritmo para ler 2 valores informados pelo usuário e enquanto o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor, mas para a mesma variável. Ou seja, para o segundo valor não pode ser aceito o valor zero nem um valor negativo. o seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor e exibir o resultado ao usuário */
+
+        var valor1 = parseInt(prompt("Digite um número: "));
+        var valor2 = parseInt(
+            prompt("Digite um número positivo maior que zero: ")
+        );
+
+        while (valor2 <= 0) {
+            valor2 = parseInt(
+                prompt("Número inválido.\nDigite um número positivo maior que zero: ")
+            );
+        }
+
+        var resultado = valor1 / valor2;
+
+        alert(
+            "1° valor: " +
+            valor1 +
+            "\n2° valor: " +
+            valor2 +
+            "\nResultado da divisão: " +
+            resultado
+        );
+
+    </script>
+</body>
+
+</html>

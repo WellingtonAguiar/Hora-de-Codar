@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let planetas = ["terra", "marte", "plutão", "vênus", "júpiter", "saturno"];
+
+        let planetaUsuario = prompt("Digite o nome de um planeta:").toLowerCase();
+
+        if (planetas.includes(planetaUsuario)) {
+            console.log(`O planeta ${planetaUsuario} está na lista!`);
+        } else {
+            console.log(`O planeta ${planetaUsuario} NÃO está na lista.`);
+        }
+    </script>
+</body>
+
+</html>
